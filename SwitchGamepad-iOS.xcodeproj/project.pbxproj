@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3300BCBD25931CEB0048599E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3300BCBC25931CEB0048599E /* AppDelegate.m */; };
+		3300BCC025931CEB0048599E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3300BCBF25931CEB0048599E /* SceneDelegate.m */; };
+		3300BCC325931CEB0048599E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3300BCC225931CEB0048599E /* TableViewController.m */; };
+		3300BCC625931CEB0048599E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3300BCC425931CEB0048599E /* Main.storyboard */; };
+		3300BCC825931CED0048599E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3300BCC725931CED0048599E /* Assets.xcassets */; };
+		3300BCCB25931CED0048599E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3300BCC925931CED0048599E /* LaunchScreen.storyboard */; };
+		3300BCCE25931CED0048599E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3300BCCD25931CED0048599E /* main.m */; };
+		3300BCD825931CED0048599E /* SwitchGamepad_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3300BCD725931CED0048599E /* SwitchGamepad_iOSTests.m */; };
+		3300BCE325931CED0048599E /* SwitchGamepad_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3300BCE225931CED0048599E /* SwitchGamepad_iOSUITests.m */; };
+		3300BCF525931DA00048599E /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3300BCF425931DA00048599E /* IJKMediaFramework.framework */; };
+		3300BCF625931DA00048599E /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3300BCF425931DA00048599E /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3300BD0825932AF70048599E /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3300BD0725932AEC0048599E /* libbz2.tbd */; };
+		3300BD0D25932B0C0048599E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3300BD0B25932AFD0048599E /* libz.tbd */; };
+		3300BD1025932B110048599E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3300BD0C25932B040048599E /* libiconv.tbd */; };
+		3300BD1425932B580048599E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3300BD1325932B530048599E /* libc++.tbd */; };
+		33925811259D923900881F29 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3392580E259D923900881F29 /* GCDAsyncSocket.m */; };
+		33925812259D923900881F29 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33925810259D923900881F29 /* GCDAsyncUdpSocket.m */; };
+		3397F64D259E5CF500231D57 /* ButtonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397F64C259E5CF500231D57 /* ButtonTableViewController.m */; };
+		3397F653259EF3AB00231D57 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3397F652259EF3AB00231D57 /* CoreData.framework */; };
+		3397F65D259EF61C00231D57 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397F65C259EF61C00231D57 /* SettingTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3300BCD425931CED0048599E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3300BCB025931CEB0048599E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3300BCB725931CEB0048599E;
+			remoteInfo = "SwitchGamepad-iOS";
+		};
+		3300BCDF25931CED0048599E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3300BCB025931CEB0048599E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3300BCB725931CEB0048599E;
+			remoteInfo = "SwitchGamepad-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3300BCF725931DA00048599E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3300BCF625931DA00048599E /* IJKMediaFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3300BCB825931CEB0048599E /* SwitchGamepad-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwitchGamepad-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3300BCBB25931CEB0048599E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3300BCBC25931CEB0048599E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3300BCBE25931CEB0048599E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3300BCBF25931CEB0048599E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3300BCC125931CEB0048599E /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3300BCC225931CEB0048599E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		3300BCC525931CEB0048599E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3300BCC725931CED0048599E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3300BCCA25931CED0048599E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3300BCCC25931CED0048599E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3300BCCD25931CED0048599E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3300BCD325931CED0048599E /* SwitchGamepad-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwitchGamepad-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3300BCD725931CED0048599E /* SwitchGamepad_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchGamepad_iOSTests.m; sourceTree = "<group>"; };
+		3300BCD925931CED0048599E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3300BCDE25931CED0048599E /* SwitchGamepad-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwitchGamepad-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3300BCE225931CED0048599E /* SwitchGamepad_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchGamepad_iOSUITests.m; sourceTree = "<group>"; };
+		3300BCE425931CED0048599E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3300BCF425931DA00048599E /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = "SwitchGamepad-iOS/IJKMediaFramework.framework"; sourceTree = "<group>"; };
+		3300BD0725932AEC0048599E /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		3300BD0B25932AFD0048599E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3300BD0C25932B040048599E /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3300BD1325932B530048599E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3392580D259D923900881F29 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		3392580E259D923900881F29 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		3392580F259D923900881F29 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		33925810259D923900881F29 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		3397F64B259E5CE100231D57 /* ButtonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonTableViewController.h; sourceTree = "<group>"; };
+		3397F64C259E5CF500231D57 /* ButtonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTableViewController.m; sourceTree = "<group>"; };
+		3397F652259EF3AB00231D57 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3397F65B259EF61100231D57 /* SettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		3397F65C259EF61C00231D57 /* SettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3300BCB525931CEB0048599E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3397F653259EF3AB00231D57 /* CoreData.framework in Frameworks */,
+				3300BCF525931DA00048599E /* IJKMediaFramework.framework in Frameworks */,
+				3300BD1425932B580048599E /* libc++.tbd in Frameworks */,
+				3300BD0D25932B0C0048599E /* libz.tbd in Frameworks */,
+				3300BD1025932B110048599E /* libiconv.tbd in Frameworks */,
+				3300BD0825932AF70048599E /* libbz2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300BCD025931CED0048599E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300BCDB25931CED0048599E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3300BCAF25931CEB0048599E = {
+			isa = PBXGroup;
+			children = (
+				3300BCBA25931CEB0048599E /* SwitchGamepad-iOS */,
+				3300BCD625931CED0048599E /* SwitchGamepad-iOSTests */,
+				3300BCE125931CED0048599E /* SwitchGamepad-iOSUITests */,
+				3300BCB925931CEB0048599E /* Products */,
+				3300BCF325931DA00048599E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3300BCB925931CEB0048599E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3300BCB825931CEB0048599E /* SwitchGamepad-iOS.app */,
+				3300BCD325931CED0048599E /* SwitchGamepad-iOSTests.xctest */,
+				3300BCDE25931CED0048599E /* SwitchGamepad-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3300BCBA25931CEB0048599E /* SwitchGamepad-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3392580F259D923900881F29 /* GCDAsyncSocket.h */,
+				3392580E259D923900881F29 /* GCDAsyncSocket.m */,
+				3392580D259D923900881F29 /* GCDAsyncUdpSocket.h */,
+				33925810259D923900881F29 /* GCDAsyncUdpSocket.m */,
+				3300BCBB25931CEB0048599E /* AppDelegate.h */,
+				3300BCBC25931CEB0048599E /* AppDelegate.m */,
+				3300BCBE25931CEB0048599E /* SceneDelegate.h */,
+				3300BCBF25931CEB0048599E /* SceneDelegate.m */,
+				3300BCC125931CEB0048599E /* TableViewController.h */,
+				3300BCC225931CEB0048599E /* TableViewController.m */,
+				3300BCC425931CEB0048599E /* Main.storyboard */,
+				3300BCC725931CED0048599E /* Assets.xcassets */,
+				3300BCC925931CED0048599E /* LaunchScreen.storyboard */,
+				3300BCCC25931CED0048599E /* Info.plist */,
+				3300BCCD25931CED0048599E /* main.m */,
+				3397F64B259E5CE100231D57 /* ButtonTableViewController.h */,
+				3397F64C259E5CF500231D57 /* ButtonTableViewController.m */,
+				3397F65B259EF61100231D57 /* SettingTableViewController.h */,
+				3397F65C259EF61C00231D57 /* SettingTableViewController.m */,
+			);
+			path = "SwitchGamepad-iOS";
+			sourceTree = "<group>";
+		};
+		3300BCD625931CED0048599E /* SwitchGamepad-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				3300BCD725931CED0048599E /* SwitchGamepad_iOSTests.m */,
+				3300BCD925931CED0048599E /* Info.plist */,
+			);
+			path = "SwitchGamepad-iOSTests";
+			sourceTree = "<group>";
+		};
+		3300BCE125931CED0048599E /* SwitchGamepad-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3300BCE225931CED0048599E /* SwitchGamepad_iOSUITests.m */,
+				3300BCE425931CED0048599E /* Info.plist */,
+			);
+			path = "SwitchGamepad-iOSUITests";
+			sourceTree = "<group>";
+		};
+		3300BCF325931DA00048599E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3397F652259EF3AB00231D57 /* CoreData.framework */,
+				3300BD1325932B530048599E /* libc++.tbd */,
+				3300BD0C25932B040048599E /* libiconv.tbd */,
+				3300BD0B25932AFD0048599E /* libz.tbd */,
+				3300BD0725932AEC0048599E /* libbz2.tbd */,
+				3300BCF425931DA00048599E /* IJKMediaFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3300BCB725931CEB0048599E /* SwitchGamepad-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3300BCE725931CED0048599E /* Build configuration list for PBXNativeTarget "SwitchGamepad-iOS" */;
+			buildPhases = (
+				3300BCB425931CEB0048599E /* Sources */,
+				3300BCB525931CEB0048599E /* Frameworks */,
+				3300BCB625931CEB0048599E /* Resources */,
+				3300BCF725931DA00048599E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwitchGamepad-iOS";
+			productName = "SwitchGamepad-iOS";
+			productReference = 3300BCB825931CEB0048599E /* SwitchGamepad-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3300BCD225931CED0048599E /* SwitchGamepad-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3300BCEA25931CED0048599E /* Build configuration list for PBXNativeTarget "SwitchGamepad-iOSTests" */;
+			buildPhases = (
+				3300BCCF25931CED0048599E /* Sources */,
+				3300BCD025931CED0048599E /* Frameworks */,
+				3300BCD125931CED0048599E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3300BCD525931CED0048599E /* PBXTargetDependency */,
+			);
+			name = "SwitchGamepad-iOSTests";
+			productName = "SwitchGamepad-iOSTests";
+			productReference = 3300BCD325931CED0048599E /* SwitchGamepad-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3300BCDD25931CED0048599E /* SwitchGamepad-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3300BCED25931CED0048599E /* Build configuration list for PBXNativeTarget "SwitchGamepad-iOSUITests" */;
+			buildPhases = (
+				3300BCDA25931CED0048599E /* Sources */,
+				3300BCDB25931CED0048599E /* Frameworks */,
+				3300BCDC25931CED0048599E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3300BCE025931CED0048599E /* PBXTargetDependency */,
+			);
+			name = "SwitchGamepad-iOSUITests";
+			productName = "SwitchGamepad-iOSUITests";
+			productReference = 3300BCDE25931CED0048599E /* SwitchGamepad-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3300BCB025931CEB0048599E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					"ad asd",
+				);
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					3300BCB725931CEB0048599E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					3300BCD225931CED0048599E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3300BCB725931CEB0048599E;
+					};
+					3300BCDD25931CED0048599E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3300BCB725931CEB0048599E;
+					};
+				};
+			};
+			buildConfigurationList = 3300BCB325931CEB0048599E /* Build configuration list for PBXProject "SwitchGamepad-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3300BCAF25931CEB0048599E;
+			productRefGroup = 3300BCB925931CEB0048599E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3300BCB725931CEB0048599E /* SwitchGamepad-iOS */,
+				3300BCD225931CED0048599E /* SwitchGamepad-iOSTests */,
+				3300BCDD25931CED0048599E /* SwitchGamepad-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3300BCB625931CEB0048599E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300BCCB25931CED0048599E /* LaunchScreen.storyboard in Resources */,
+				3300BCC825931CED0048599E /* Assets.xcassets in Resources */,
+				3300BCC625931CEB0048599E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300BCD125931CED0048599E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300BCDC25931CED0048599E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3300BCB425931CEB0048599E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300BCC325931CEB0048599E /* TableViewController.m in Sources */,
+				33925811259D923900881F29 /* GCDAsyncSocket.m in Sources */,
+				3300BCBD25931CEB0048599E /* AppDelegate.m in Sources */,
+				3300BCCE25931CED0048599E /* main.m in Sources */,
+				3397F65D259EF61C00231D57 /* SettingTableViewController.m in Sources */,
+				3397F64D259E5CF500231D57 /* ButtonTableViewController.m in Sources */,
+				33925812259D923900881F29 /* GCDAsyncUdpSocket.m in Sources */,
+				3300BCC025931CEB0048599E /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300BCCF25931CED0048599E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300BCD825931CED0048599E /* SwitchGamepad_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300BCDA25931CED0048599E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300BCE325931CED0048599E /* SwitchGamepad_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3300BCD525931CED0048599E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3300BCB725931CEB0048599E /* SwitchGamepad-iOS */;
+			targetProxy = 3300BCD425931CED0048599E /* PBXContainerItemProxy */;
+		};
+		3300BCE025931CED0048599E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3300BCB725931CEB0048599E /* SwitchGamepad-iOS */;
+			targetProxy = 3300BCDF25931CED0048599E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3300BCC425931CEB0048599E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3300BCC525931CEB0048599E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3300BCC925931CED0048599E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3300BCCA25931CED0048599E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3300BCE525931CED0048599E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3300BCE625931CED0048599E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3300BCE825931CED0048599E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS244YGNDQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwitchGamepad-iOS",
+				);
+				INFOPLIST_FILE = "SwitchGamepad-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrabbit.SwitchGamepad-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		3300BCE925931CED0048599E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS244YGNDQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwitchGamepad-iOS",
+				);
+				INFOPLIST_FILE = "SwitchGamepad-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrabbit.SwitchGamepad-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		3300BCEB25931CED0048599E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS244YGNDQ;
+				INFOPLIST_FILE = "SwitchGamepad-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrabbit.SwitchGamepad-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchGamepad-iOS.app/SwitchGamepad-iOS";
+			};
+			name = Debug;
+		};
+		3300BCEC25931CED0048599E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS244YGNDQ;
+				INFOPLIST_FILE = "SwitchGamepad-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrabbit.SwitchGamepad-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchGamepad-iOS.app/SwitchGamepad-iOS";
+			};
+			name = Release;
+		};
+		3300BCEE25931CED0048599E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS244YGNDQ;
+				INFOPLIST_FILE = "SwitchGamepad-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrabbit.SwitchGamepad-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SwitchGamepad-iOS";
+			};
+			name = Debug;
+		};
+		3300BCEF25931CED0048599E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS244YGNDQ;
+				INFOPLIST_FILE = "SwitchGamepad-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrabbit.SwitchGamepad-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SwitchGamepad-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3300BCB325931CEB0048599E /* Build configuration list for PBXProject "SwitchGamepad-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300BCE525931CED0048599E /* Debug */,
+				3300BCE625931CED0048599E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3300BCE725931CED0048599E /* Build configuration list for PBXNativeTarget "SwitchGamepad-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300BCE825931CED0048599E /* Debug */,
+				3300BCE925931CED0048599E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3300BCEA25931CED0048599E /* Build configuration list for PBXNativeTarget "SwitchGamepad-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300BCEB25931CED0048599E /* Debug */,
+				3300BCEC25931CED0048599E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3300BCED25931CED0048599E /* Build configuration list for PBXNativeTarget "SwitchGamepad-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300BCEE25931CED0048599E /* Debug */,
+				3300BCEF25931CED0048599E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3300BCB025931CEB0048599E /* Project object */;
+}
