@@ -22,22 +22,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // rtmp://123.112.151.62/live/mystream
-    // rtmp://rrabbit.xyz/live/mystream
     NSString *liveUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"liveUrl"];
     if (liveUrl == nil) {
-        [self.urlText setText:@"rtmp://rrabbit.xyz/live/mystream"];
+        [self.urlText setText:@"rtmp://xxx.com/live/xxx"];
         [[NSUserDefaults standardUserDefaults] setObject:self.urlText.text forKey:@"liveUrl"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     else {
         [self.urlText setText:liveUrl];
     }
-    // 123.116.87.42
-    // 192.168.50.58
+    
     NSString *serverUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"serverUrl"];
     if (serverUrl == nil) {
-        [self.serverUrlText setText:@"rrabbit.xyz"];
+        [self.serverUrlText setText:@"xxx.com"];
         [[NSUserDefaults standardUserDefaults] setObject:self.serverUrlText.text forKey:@"serverUrl"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
@@ -46,7 +43,7 @@
     }
     NSString *serverPort = [[NSUserDefaults standardUserDefaults] objectForKey:@"serverPort"];
     if (serverPort == nil) {
-        [self.serverPortText setText:@"7770"];
+        [self.serverPortText setText:@"8080"];
         [[NSUserDefaults standardUserDefaults] setObject:self.serverPortText.text forKey:@"serverPort"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
@@ -76,11 +73,11 @@
     if ([cell.textLabel.text isEqual: @"Default"]) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Warning" message:@"Are you sure?" preferredStyle:  UIAlertControllerStyleAlert];
         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [self.urlText setText:@"rtmp://rrabbit.xyz/live/mystream"];
+            [self.urlText setText:@"rtmp://xxx.com/live/xxx"];
             [[NSUserDefaults standardUserDefaults] setObject:self.urlText.text forKey:@"liveUrl"];
-            [self.serverUrlText setText:@"rrabbit.xyz"];
+            [self.serverUrlText setText:@"xxx.com"];
             [[NSUserDefaults standardUserDefaults] setObject:self.serverUrlText.text forKey:@"serverUrl"];
-            [self.serverPortText setText:@"7770"];
+            [self.serverPortText setText:@"8080"];
             [[NSUserDefaults standardUserDefaults] setObject:self.serverPortText.text forKey:@"serverPort"];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }]];
